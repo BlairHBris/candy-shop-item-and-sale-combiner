@@ -11,10 +11,11 @@ function buildTransactions(sales, items) {
             ...sale,
             description: item.description,
             price: item.price,
-
         }
     })
 }
+
+
 
 module.exports = {
     // Uncomment these as you write them
