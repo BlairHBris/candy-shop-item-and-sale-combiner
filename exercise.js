@@ -15,11 +15,13 @@ function buildTransactions(sales, items) {
     })
 }
 
-
+function getTransactionsByItemDescription(transactions, description) {
+    return transactions.filter(transaction => transaction.description === description)
+}
 
 module.exports = {
     // Uncomment these as you write them
     getItemById,
     buildTransactions,
-    // getTransactionsByItemDescription
+    getTransactionsByItemDescription
 }
